@@ -1,0 +1,5 @@
+TODO:
+- normalise total_points by max in each season (per position?)
+- add injury binary to exclude player's limited seasons (e.g. van Dijk 2020/21)
+- introduce optimisation logic for selecting bench players
+- introduce buckets for price and points average (or another metric not to explicitly select the player with a marginal points advantage, consistency should be rewarded too)
