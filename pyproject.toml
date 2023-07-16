@@ -11,5 +11,6 @@ dependencies = [
     "numpy",
     "pandas",
     "matplotlib",
-    "requests"
+    "requests",
+    "pulp"
 ]
