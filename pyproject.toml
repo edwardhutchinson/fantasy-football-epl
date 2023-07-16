@@ -1,0 +1,15 @@
+[project]
+name = "ff_package"
+version = "0.0.0"
+description = "Fantasy Football bits"
+authors = [
+    {name = "Ed Hutchinson", email = "edwardhutchinson73@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "requests"
+]
