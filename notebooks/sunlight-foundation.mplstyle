@@ -1,0 +1,20 @@
+# sunlight-foundation.mplstyle
+# https://sunlightfoundation.com/2014/03/12/datavizguide/
+
+axes.axisbelow: True
+axes.edgecolor: "#FFFFFF"
+axes.facecolor: "#EFECEA"
+axes.grid: True
+axes.labelcolor: "#635F5D"
+axes.labelpad: 20
+axes.titlecolor: "#635F5D"
+axes.titlepad: 20
+figure.facecolor: "#EFECEA"
+grid.color: "#FFFFFF"
+grid.linestyle: "solid"
+grid.linewidth: 1
+lines.linewidth: 2
+xtick.color: "#635F5D"
+xtick.direction: "out"
+ytick.color: "#635F5D"
+ytick.direction: "out"
