@@ -9,7 +9,7 @@ def fetch_data(fp):
     df['now_cost'] = df['now_cost'] / 10
     return df
 
-def generate_model(df):
+def generate_model(df, optimisation_metric: str = 'total_points'):
     # Decision variables
     X = [p.LpVariable('x_{}'.format(i), cat='Binary') for i in df.index]
 
@@ -38,7 +38,7 @@ def generate_model(df):
     mdl = p.LpProblem('FantasyFootball', p.LpMaximize)
 
     # Objective Function
-    mdl += sum(X[i] * df.loc[i, 'total_points'] for i in df.index), 'Objective'
+    mdl += sum(X[i] * df.loc[i, optimisation_metric] for i in df.index), 'Objective'
 
     # Constraints
     # Team selection
