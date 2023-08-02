@@ -7,7 +7,7 @@ from pathlib import Path
 def fetch_data(filepath: Path) -> pd.DataFrame:
     df = pd.read_csv(filepath)
     df["injured"] = 0  # Return no players injured (update at runtime)
-    df["now_cost"] = df["now_cost"] / 10
+    df["now_cost"] = df["now_cost"]
     return df
 
 
